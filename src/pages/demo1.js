@@ -4,6 +4,8 @@
 import React, { Component } from 'react';
 import WeatherStore from '../store/index';
 import updateWeather from '../actions/action';
+import _ from 'lodash';
+
 class Demo extends Component {
     constructor(props) {
         super(props)
@@ -35,6 +37,9 @@ class Demo extends Component {
             <div>
                 <p>
                     {selectedId}
+                </p>
+                <p>
+                    { _.join(['Hello', 'webpack'], ' ')}
                 </p>
             </div>
         )
